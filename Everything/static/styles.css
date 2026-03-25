@@ -1,0 +1,59 @@
+/* NAVBAR CONTAINER */
+header {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TITLE */
+header h1 {
+    color: white;
+    font-size: 26px;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* NAV LIST */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+/* NAV LINKS */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+}
+
+/* UNDERLINE HOVER EFFECT */
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #FFF5EE;
+    bottom: 0;
+    left: 0;
+    transition: width 0.25s ease-in-out;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* ACTIVE PAGE */
+nav a.active {
+    font-weight: bold;
+}
