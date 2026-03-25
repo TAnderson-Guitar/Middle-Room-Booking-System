@@ -5,29 +5,25 @@
 <title>Middle Room System</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<link rel="shortcut icon" href="https://edu.sites.moodlecentral.com.au/ap/schools/nsw/quakershil-h/pluginfile.php/1/theme_moove/favicon/1772497795/QHHS%20Logo.ico">
 </head>
-<header>
-<div id = "menu" class = "container">
-<h1>Middle Room Education and Booking<h1>
-<nav>
-<ul>
-<li><a class = "active" href="index.html">Home</a></li>
-<li><a class = "active" href="training.html">Learn About the Middle Room</a></li>
-<li><a class = "active" href="test.html">Take Your Test</a></li>
-<li><a class = "active" href="booking.html">Book a Reservation</a></li>
-</ul>
-</nav>
-</div>
-</header>
-<body class="container mt-5">
-
-<h1 class="text-center mb-4">Middle Room Education & Booking System</h1>
-
-<div class="d-grid gap-3">
-<a href="/training" class="btn btn-primary">Start Training</a>
-<a href="/test" class="btn btn-secondary">Take Test</a>
-<a href="/booking" class="btn btn-success">Book the Middle Room</a>
-</div>
-
+{% include "header.html" %}
 <body>
-</html>>
+<div class="banner">
+  <h1>Middle Room Education & Booking System</h1>
+</div>
+
+<div class="container mt-5">
+
+    <div class="d-grid gap-3">
+        <a href="/training" class="btn" style="background-color:#a5d5ff; color: black">Start Training</a>
+        
+        
+        <a href="/test" class="btn" style="background-color:#a5d5ff; color: black">Take Test</a>
+        <a href="/booking" class="btn" style="background-color:#a5d5ff; color: black">Book the Middle Room</a>
+    </div>
+</div>
+
+</body>
+</html>
+;
